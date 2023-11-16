@@ -73,7 +73,10 @@ techdocs:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
 scaffolder:
-  # see https://backstage.io/docs/features/software-templates/configuration for software template options
+  defaultAuthor:
+    name: Backstage
+    email: lecanhduylsdd@gmail.com
+  defaultCommitMessage: "Initilizing by Backstage"
 
 catalog:
   import:
@@ -90,7 +93,11 @@ catalog:
       target: https://github.com/sky-org-rjoNE/catalog/blob/main/catalog-info.yaml
     - type: url
       target: https://github.com/sky-org-rjoNE/demo-cicd/blob/main/catalog-info.yaml
-        
+    - type: url
+      target: https://github.com/sky-org-rjoNE/catalog/blob/main/template.yaml
+      rules:
+        - allow:
+            - "Template"
       # rules:
       #   - allow: [User, Group]
     # # Local example data, file locations are relative to the backend process, typically `packages/backend`
