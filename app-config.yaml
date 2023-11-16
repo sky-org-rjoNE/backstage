@@ -100,7 +100,7 @@ catalog:
     - type: url
       target: https://github.com/sky-org-rjoNE/demo-cicd/blob/main/catalog-info.yaml
     - type: url
-      target: https://github.com/sky-org-rjoNE/catalog/blob/main/template.yaml
+      target: https://github.com/sky-org-rjoNE/catalog/blob/main/template-all.yaml
       # rules:
       #   - allow: [User, Group]
     # # Local example data, file locations are relative to the backend process, typically `packages/backend`
@@ -108,10 +108,10 @@ catalog:
     #   target: ../../examples/entities.yaml
 
     # Local example template
-    - type: file
-      target: ../../examples/template/template.yaml
-      rules:
-        - allow: [Template]
+    # - type: file
+    #   target: ../../examples/template/template.yaml
+    #   rules:
+    #     - allow: [Template]
 
     # # Local example organizational data
     # - type: file
