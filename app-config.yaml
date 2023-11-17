@@ -18,6 +18,8 @@ auth:
     github:
       development:
         $include: credentials.yaml
+        
+        
 
 organization:
   name: My Company
