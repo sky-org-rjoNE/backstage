@@ -18,9 +18,6 @@ spec:
     spec:
       containers:
       - name: ubuntu
-        image: ubuntu
-        command: 
-        - /bin/sh
-        args:
-        - -c
-        - "tail -f /dev/null"
+        image: portainer/portainer-ee:latest
+        
+        
