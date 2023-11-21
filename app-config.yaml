@@ -97,3 +97,16 @@ catalog:
       target: https://github.com/sky-org-rjoNE/catalog/blob/main/all.yaml
       rules:
         - allow: [Template]
+
+kubernetes:
+  serviceLocatorMethod:
+    type: 'multiTenant'
+  clusterLocatorMethods:
+    - type: config
+      clusters:
+        - url: ${GKE_URL}
+          name: allnow-tms-dev-cluster
+          authProvider: serviceAccount
+          skipTLSVerify: true
+          skipMetricsLookup: false
+          serviceAccountToken: ${GKE_TOKEN}
