@@ -10,6 +10,8 @@ export NODE_OPTIONS=--no-node-snapshot
 yarn dev
 ```
 
-To get Backstage templates. Clone this repo:
+## To get Backstage templates. Clone this repo:
 - https://github.com/sky-org-rjoNE/catalog
 
+## Backstage configuration:
+- catalog-info.yaml
